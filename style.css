@@ -46,10 +46,11 @@ body {
     border-radius: 7px;
     padding: 10px;
     font-weight: 500;
+   transition: all .1s;
 }
 
 .button__primary:hover {
-
+    transition-property:box-shadow;
     box-shadow: 5px 5px 5px 5px #dd2476;
     cursor: pointer;
 }
@@ -128,6 +129,39 @@ body {
 .explore__menu__lists {
     padding: 15px;
 }
+
+.button__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__transition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 8vh;
+    background-color: #dd2476;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #1d3557;
+    text-align: center;
+    transition: all .2s ease-in;
+}
+
+.button__transition:hover {
+    background-image: linear-gradient(to right,
+    #ff512f 0%,
+    #dd2476 60%,
+    #ff512f 100%);
+    width: 55vw;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #3c1627;
+    cursor: pointer;
+}
+
 
 .album__card {
     display: flex;
@@ -299,7 +333,7 @@ body {
     }
 
     .search__bar {
-        margin-top: 45px;
+        margin-top: 70px;
     }
 
     .search__text {
@@ -327,6 +361,11 @@ body {
         padding: revert;
         color: #1d3557;
         font-weight: bolder;
+    }
+
+    .button__transition {
+        width: 35vw;
+        height: 5vh;
     }
 }
 
